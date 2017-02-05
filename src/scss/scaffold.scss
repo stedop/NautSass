@@ -1,0 +1,44 @@
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body {
+  overflow-x: hidden;
+  background: #eee;
+  min-width: 920px
+}
+
+a {
+  color: $link-color;
+  transition: color .15s ease
+}
+
+::-moz-selection, ::selection {
+  background: #0079d3;
+  text-shadow: none;
+  color: #fff
+}
+
+:focus {
+  outline: none !important
+}
+
+body .content .text, body .content textarea, body .content input[type=text], body .content input[type=password], .side .spacer input, body .content input[type=url] {
+  background: $body-background-color;
+  border: 1px solid $body-border-color;
+  color: $body-text-color;
+  box-shadow: none;
+  transition: border-color .15s ease, color .15s ease;
+  padding: 6px 12px
+}
+
+body .content .text:hover, body .content textarea:hover, body .content input[type=text]:hover, body .content input[type=password]:hover, .side .spacer input:hover, body .content input[type=url]:hover {
+  border-color: $body-border-hover-color;
+}
+
+body .content .text:focus, body .content textarea:focus, body .content input[type=text]:focus, body .content input[type=password]:focus, .side .spacer input:active, body .content input[type=url]:focus {
+  border-color: #24a0ed;
+  color: #292f34
+}
